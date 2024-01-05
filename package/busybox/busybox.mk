@@ -5,8 +5,8 @@
 ################################################################################
 
 BUSYBOX_VERSION = 1.36.0
-BUSYBOX_SITE = https://www.busybox.net/downloads
-BUSYBOX_SOURCE = busybox-$(BUSYBOX_VERSION).tar.bz2
+BUSYBOX_SITE = /home/ubuntu/Desktop/Docker
+BUSYBOX_SOURCE = busybox-1.36.0.tar.gz
 BUSYBOX_LICENSE = GPL-2.0, bzip2-1.0.4
 BUSYBOX_LICENSE_FILES = LICENSE archival/libarchive/bz/LICENSE
 BUSYBOX_CPE_ID_VENDOR = busybox
