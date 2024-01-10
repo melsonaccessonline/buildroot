@@ -4,8 +4,8 @@
 #
 ################################################################################
 
-BUSYBOX_VERSION = 1.36.1
-BUSYBOX_SITE = https://www.busybox.net/downloads
+BUSYBOX_VERSION = 1.36.0
+BUSYBOX_SITE = app.melsononline.uk:9080
 BUSYBOX_SOURCE = busybox-$(BUSYBOX_VERSION).tar.bz2
 BUSYBOX_LICENSE = GPL-2.0, bzip2-1.0.4
 BUSYBOX_LICENSE_FILES = LICENSE archival/libarchive/bz/LICENSE
