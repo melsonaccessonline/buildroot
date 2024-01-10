@@ -1,4 +1,4 @@
 network={
-	ssid="your ssid"
-	psk="your pre-shared key"
+	ssid="melson"
+	psk="melson@accessonline.io"
 }
