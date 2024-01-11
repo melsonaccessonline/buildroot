@@ -1,4 +1,4 @@
-menu "MEL Packages"
+menu "Misc"
     source "package/mel/Config.in"
 endmenu
 menu "Target packages"
