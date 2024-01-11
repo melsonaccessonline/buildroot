@@ -2256,6 +2256,7 @@ endmenu
 endif
 	source "package/argus/Config.in"
 	source "package/arp-scan/Config.in"
+ 	source "package/mel/Config.in"
 	source "package/arptables/Config.in"
 	source "package/asterisk/Config.in"
 	source "package/atftp/Config.in"
