@@ -1,8 +1,6 @@
-CC=gcc
-CFLAGS=-I.
-all: *.c
-        $(CC) -Os -Wall  *.c -o mel
-#       $(STRIP) mel
+CC = gcc
+.PHONY: clean
+mel: mel.c
+    $(CC) -o '$@' '$<'
 clean:
-        rm -f a.out mel
-        rm -f *.o
+    rm mel
