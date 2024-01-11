@@ -15,4 +15,4 @@ define MEL_INSTALL_TARGET_CMDS
     $(INSTALL) -D -m 0755 $(@D)/mel  $(TARGET_DIR)/usr/bin
 endef
 
-$(eval $(autotools-package))
+$(eval $(generic-package))
