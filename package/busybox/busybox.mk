@@ -129,7 +129,6 @@ define BUSYBOX_PERMISSIONS
 # ignores the files with type 'F' ( optional files).
 	/usr/bin/wall 			 F 4755 0  0 - - - - -
 	/bin/ping 			 F 4755 0  0 - - - - -
-	/bin/melson 			 F 4755 0  0 - - - - -
 	/bin/ping6 			 F 4755 0  0 - - - - -
 	/usr/bin/crontab 		 F 4755 0  0 - - - - -
 	/sbin/findfs 			 F 4755 0  0 - - - - -
