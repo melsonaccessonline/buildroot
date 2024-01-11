@@ -1,1 +1,5 @@
 
+config BR2_PACKAGE_MEL
+	bool "mel"
+	help
+	 mel.
