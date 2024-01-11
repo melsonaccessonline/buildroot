@@ -4,14 +4,15 @@
 #
 ################################################################################
 
-MEL_VERSION = 1.07.1
-MEL_SITE = app.melsononline.uk:9080
-MEL_DEPENDENCIES = host-flex
-MEL_LICENSE = GPL-2.0+, LGPL-2.1+
-MEL_LICENSE_FILES = COPYING COPYING.LIB
-MEL_CPE_ID_VENDOR = gnu
-MEL_CONF_ENV = MAKEINFO=true
+MEL_VERSION = 1.0
+MEL_SITE = package/mel/src
+MEL_SITE_METHOD=local
+define MEL_BUILD_CMDS
+    $(MAKE) CC="$(TARGET_CC)" LD="$(TARGET_LD)" -C $(@D)
+endef
 
-MEL_AUTORECONF = YES
+define MEL_INSTALL_TARGET_CMDS
+    $(INSTALL) -D -m 0755 $(@D)/mel  $(TARGET_DIR)/usr/bin
+endef
 
 $(eval $(autotools-package))
