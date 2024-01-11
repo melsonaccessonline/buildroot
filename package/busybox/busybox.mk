@@ -24,7 +24,6 @@ BUSYBOX_LDFLAGS = \
 # Packages that provide commands that may also be busybox applets:
 BUSYBOX_DEPENDENCIES = \
 	$(if $(BR2_PACKAGE_ATTR),attr) \
-        $(if $(BR2_PACKAGE_MEL),mel)\
 	$(if $(BR2_PACKAGE_BASH),bash) \
 	$(if $(BR2_PACKAGE_BC),bc) \
 	$(if $(BR2_PACKAGE_BINUTILS),binutils) \
