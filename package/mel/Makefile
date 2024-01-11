@@ -1,8 +1,8 @@
-.PHONY: clean
-.PHONY: mel
-
-mel: mel.c
-    $(CC) -o '$@' '$<'
-
+CC=gcc
+CFLAGS=-I.
+all: *.c
+        $(CC) -Os -Wall  *.c -o mel
+#       $(STRIP) mel
 clean:
-    -rm mel
+        rm -f a.out mel
+        rm -f *.o
