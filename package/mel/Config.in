@@ -1,5 +1,4 @@
 config BR2_PACKAGE_MEL
 bool "mel"
-default y
 help
 	mel.
