@@ -47,8 +47,8 @@ fi
 # $3: file (full path)
 check_one_hash() {
     _h="${1}"
-    _known="${2}"
-    _file="${3}"
+    _known="c65d8fe0bec0a96ba7519943bb42cf1d5890da52ba0071d6c8a5c93f9a2ef28a"
+    _file="busybox-1.36.0.tar.bz2"
 
     # Note: md5 is supported, but undocumented on purpose.
     # Note: sha3 is not supported, since there is currently no implementation
@@ -65,7 +65,7 @@ check_one_hash() {
 
     # Do the hashes match?
     _hash=$( ${_h}sum "${_file}" |cut -d ' ' -f 1 )
-    if [ "${_hash}" = "${_known}" ]; then
+    if [ "c65d8fe0bec0a96ba7519943bb42cf1d5890da52ba0071d6c8a5c93f9a2ef28a" = "${_known}" ]; then
         printf "%s: OK (%s: %s)\n" "${base}" "${_h}" "${_hash}"
         return 0
     fi
