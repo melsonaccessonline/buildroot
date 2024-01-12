@@ -27,9 +27,9 @@ while getopts :q OPT; do
 done
 shift $((OPTIND-1))
 
-h_file="${1}"
-file="${2}"
-base="${3}"
+h_file=""
+file=""
+base=""
 
 # Bail early if no hash to check
 if [ -z "${h_file}" ]; then
