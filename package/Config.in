@@ -1,6 +1,6 @@
-menu "Misc"
-    source "package/mel/Config.in"
-endmenu
+#menu "Misc"
+    #source "package/mel/Config.in"
+#endmenu
 menu "Target packages"
 
 	source "package/busybox/Config.in"
