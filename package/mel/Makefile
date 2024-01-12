@@ -1,8 +1,6 @@
+CC = xtensa-lx106-elf-gcc
 .PHONY: clean
-.PHONY: mel
-
-mel: mel.c
-        $(CC) -o '$@' '$<'
-
+mel:    mel.c
+        $(CC)   -o      '$@'    '$<'
 clean:
-        rm -f mel
+        rm mel
