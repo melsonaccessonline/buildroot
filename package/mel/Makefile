@@ -1,6 +1,8 @@
-CC = gcc
 .PHONY: clean
+.PHONY: mel
+
 mel: mel.c
-    $(CC) -o '$@' '$<'
+        $(CC) -o '$@' '$<'
+
 clean:
-    rm mel
+        rm -f mel
