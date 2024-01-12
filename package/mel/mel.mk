@@ -6,7 +6,7 @@
 
 MEL_VERSION = 1.0
 MEL_SITE = package/mel/src
-MEL_SITE_METHOD=local#
+MEL_SITE_METHOD=local
 MEL_INSTALL_TARGET:=YES
 define MEL_BUILD_CMDS
     $(MAKE) CC="$(TARGET_CC)" LD="$(TARGET_LD)" -C $(@D)
