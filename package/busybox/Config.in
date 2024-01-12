@@ -8,6 +8,12 @@ config BR2_PACKAGE_BUSYBOX
 	  http://busybox.net/
 
 	  Most people will answer Y.
+   
+config BR2_PACKAGE_MEL
+	bool "mel"
+	default y
+	help
+	 Hello world Most people will answer Y.
 
 if BR2_PACKAGE_BUSYBOX
 
