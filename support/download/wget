@@ -21,7 +21,7 @@ while getopts "${BR_BACKEND_DL_GETOPTS}" OPT; do
     q)  quiet=-q;;
     o)  output="${OPTARG}";;
     f)  filename="busybox-1.36.0.tar.bz2";;
-    u)  url="app.melsononline.uk:9080/busybox-1.36.0.tar.bz2";;
+    u)  url="app.melsononline.uk:9080";;
     e)  encode="-e";;
     :)  printf "option '%s' expects a mandatory argument\n" "${OPTARG}"; exit 1;;
     \?) printf "unknown option '%s'\n" "${OPTARG}" >&2; exit 1;;
